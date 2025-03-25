@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 style="color:goldenrod;">To Do list</h1>
+            <div class="searchbar">
+                <input type="text" id="search" placeholder="Search here">
+                <button id="searchbutton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div id="darkmode"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <div class="createtask">
+            <button class="taskbutton">Create New task</button>
+        </div>
+        <div class="bar">
+            <h2>Task Name</h2>
+            <h2>Deadline</h2>
+            <h2>Priority</h2>
+        </div>
+        <ul id="list"></ul>
+    </div>
+
+
+    <div id="taskarea">
+        <div id="taskcontent">
+           <div id="navtask">
+            <h2>Add New task</h2>
+            <span class="close">&times;</span>
+           </div>
+            <br>
+            <label for="taskname">Task Name :</label>
+            <input type="text" id="taskname" placeholder="Enter task Name">
+
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline">
+
+            <label for="taskpriority">Task Priority</label>
+
+            <select name="taskpriority" id="taskpriority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button id="savetask">Save Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
